@@ -9,6 +9,10 @@
 
 --main = interact (count . lines)
 
+
+--main :: IO ()
+--main = interact $ \s -> show (length . lines $ s)
+
 main :: IO ()
 
 main = interact (show . calculateFuel . lines)
