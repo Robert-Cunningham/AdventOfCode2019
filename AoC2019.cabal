@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 971da9fc80392fea6888e83426a5037bb7bb38410c29af2822ff77af1092f6df
+-- hash: 47188f544103f3371635e593c9369b190237bdec54e8744206d28cf57a0ea654
 
 name:           AoC2019
 version:        0.1.0.0
@@ -28,6 +28,8 @@ source-repository head
 library
   exposed-modules:
       Day2.Personal
+      Day3.Personal
+      Day4.Personal
       Lib
   other-modules:
       Paths_AoC2019
@@ -35,6 +37,8 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
+    , linear
     , monad-extras
     , split
   default-language: Haskell2010
@@ -49,6 +53,8 @@ executable aoc
   build-depends:
       AoC2019
     , base >=4.7 && <5
+    , containers
+    , linear
     , monad-extras
     , split
   default-language: Haskell2010
@@ -64,6 +70,8 @@ test-suite AoC2019-test
   build-depends:
       AoC2019
     , base >=4.7 && <5
+    , containers
+    , linear
     , monad-extras
     , split
   default-language: Haskell2010
